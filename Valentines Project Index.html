@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Slide 1: Greeting -->
+        <div class="slide active">
+            <h1>Hey Handsome! 😉</h1>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3g4bTY5eWoyd3ZwM3M0Z3BueGpsNnVybDJ0dXNpbG9zdTRheGIzNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WyyhtSnaQl8Eo/giphy.gif" alt="Johnny Bravo" class="meme-img">
+            <p>I've got a special question for you! Are you ready?</p>
+            <button class="btn" onclick="nextSlide()">Yes, bring it on! 😎</button>
+            <button class="btn" onclick="forceYes()">No, I’m scared 😬</button>
+        </div>
+
+        <!-- Slide 2: Time Together -->
+        <div class="slide">
+            <h1>We’ve been partners in crime for 6 years now! 💕</h1>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5kMml4NnNyMGxlbW52andzdzRvZHNubWJmcTBuMzcyNDQyMXlicyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2JEcU3fHZcjGU/giphy.gif" alt="Celebrating Couple">
+            <p>That’s like... 2191 days of awesomeness! Isn’t that AMAZING?</p>
+            <button class="btn" onclick="nextSlide()">Of course! Best 6 years ever! 😍</button>
+            <button class="btn" onclick="forceYes()">Uhh… it was okay 😬</button>
+        </div>
+
+        <!-- Slide 3: Love Confession -->
+        <div class="slide">
+            <h1>I love you soooo much! ❤️</h1>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjczc2hqZGY4ZnYzZTdkYzRucnB6dWo3bWxlcnNya3VrM3kzNjQzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8FbmKNAAw92tW/giphy.gif" alt="Cute Love">
+            <p>But... do you love me back? 😏</p>
+            <button class="btn" onclick="nextSlide()">YES! I love you!! 🥰</button>
+            <button class="btn" onclick="forceYes()">Nah, I’m just here for the memes 😂</button>
+        </div>
+
+        <!-- Slide 4: Dog Question -->
+        <div class="slide">
+            <h1>If I turned into a dog... would you still love me? 🐶</h1>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2l5eGxyM2t4NzRpanV2cm1vd2sydml3YzR1eWU1ZXEzYjQ0aG1maCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PdSfuPb8ZGV9P2w5IP/giphy.gif" alt="Angry Chihuahua">
+            <button class="btn" onclick="nextSlide()">Yes! I’d adopt you instantly! 🐾</button>
+            <button class="btn" onclick="forceYes()">Ew, no! 😬</button>
+        </div>
+
+        <!-- Slide 5: Worm Question -->
+        <div class="slide">
+            <h1>What if I was a little worm? 🪱</h1>
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGVtc2RxOGFscXU5c293NHpldjdhbzd0YTd3amh0MDA5ampxa2N1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrkWjSkf797lYduiXr/giphy.gif" alt="Crawling Worm">
+            <button class="btn" onclick="nextSlide()">Of course, I’d build you a worm house! 🏡</button>
+            <button class="btn" onclick="forceYes()">NOPE. Worms are gross! 🤢</button>
+        </div>
+
+        <!-- Slide 6: Forever Love -->
+        <div class="slide">
+            <h1>Would you love me... FOREVER? 😍</h1>
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZ0bjNtYzR2bm56Y2dhazMya2hlZWxucGQ2cmZoNW5uc2hqZ3k0bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x28cIQSn19Tbi/giphy.gif" alt="Forever Meme">
+            <button class="btn" onclick="nextSlide()">YES, always & forever! 💖</button>
+            <button class="btn" onclick="forceYes()">Nah, let’s just be friends 🙃</button>
+        </div>
+
+        <!-- Slide 7: Proposal -->
+        <div class="slide final-slide">
+            <h1>Mr. Robin Singh 💖</h1>
+            <p>The moment of truth... Will you be my Valentine? 😘</p>
+            <button id="yes-btn">YES 💕</button>
+            <button id="no-btn">NO 😢</button>
+        </div>
+    </div>
+</body>
+</html>
